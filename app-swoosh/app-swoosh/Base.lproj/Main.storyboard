@@ -134,6 +134,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMenTApped:" destination="d31-I9-MoG" eventType="touchUpInside" id="dD7-dJ-uPK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPD-NV-BfZ" customClass="borderBtn" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="66" width="375" height="38"/>
@@ -142,6 +145,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomenTapped:" destination="d31-I9-MoG" eventType="touchUpInside" id="Xpo-mM-khd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFe-mU-38R" customClass="borderBtn" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="132" width="375" height="38"/>
@@ -150,10 +156,13 @@
                                         <state key="normal" title="Co-Ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoEdTapped:" destination="d31-I9-MoG" eventType="touchUpInside" id="PIs-bS-vh1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxP-73-wAs" customClass="borderBtn" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxP-73-wAs" customClass="borderBtn" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="607" width="375" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40303938360000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -200,6 +209,7 @@
                         <viewLayoutGuide key="safeArea" id="zgx-vI-hou"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="JxP-73-wAs" id="u2J-qn-Cnf"/>
                         <segue destination="0b7-jG-M5Q" kind="show" identifier="SkillVCSegue" id="ZPt-QZ-FhC"/>
                     </connections>
                 </viewController>
